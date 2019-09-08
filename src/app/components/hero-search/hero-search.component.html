@@ -1,0 +1,9 @@
+<div id="search-component">
+    <div class="dropdown">
+        <input type="text" class="form-control" placeholder="search operators" #searchBox id="search-box"
+            (input)="search(searchBox.value)" data-toggle="dropdown" >
+        <div class="dropdown-menu">
+            <a class="dropdown-item" *ngFor="let operator of operators$ | async" routerLink="/detail/{{operator.id}}">{{operator.name}}</a>
+        </div>
+    </div>
+</div>

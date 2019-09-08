@@ -1,0 +1,20 @@
+.dropdown-menu{
+    padding: 0;
+    border-radius: 5px;
+}
+
+#search-component{
+    margin-left: 30px;
+}
+
+input{
+    background-color: black;
+    border-block-color: white;
+    border-radius: 100px;
+    width: 225px;
+}
+
+.dropdown-item:hover{
+    background-color: #007bff;
+    color: white;
+}

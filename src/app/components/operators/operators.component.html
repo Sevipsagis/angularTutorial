@@ -1,0 +1,25 @@
+<div class="container d-flex justify-content-between mt-5 mb-3">
+    <h4 class="text-light ml-3">OPERATORS</h4>
+    <div class="mr-3">
+        <label class="tesxt-light">
+            <input class="input-group-text text-left" #heroName />
+        </label>
+        <button class="btn btn-primary" (click)="add(heroName.value); heroName.value=''">Add</button>
+        <button (click)="showDel()" class="btn btn-danger ml-3">?</button>
+    </div>
+
+</div>
+<div class="container d-flex justify-content-center">
+    <div class="row">
+        <div class="col-md-2" *ngFor="let elem of operators">
+            <div class="op-card" routerLink="/detail/{{elem.id}}">
+                <button *ngIf="delButton" class="delete btn btn-danger" title="delete operator" (click)="delete(elem)">x</button>
+                <img class="img-thumbnail" src="../../../assets/logo/{{elem.name.toLowerCase()}}.png"
+                    alt="operator-logo" onerror="this.src='../../../assets/logo/recruit.png'">
+                <p class="text-light text-center op-label">{{elem.name | uppercase}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>

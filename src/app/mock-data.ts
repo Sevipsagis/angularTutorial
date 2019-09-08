@@ -1,0 +1,28 @@
+import { Operator } from './models/operator';
+
+export const OPERATORS: Operator[] = [
+  { id: 1, name: "Sledge", armor: 2, speed: 2, meta: true, role: "ATK" },
+  { id: 2, name: "Thatcher", armor: 2, speed: 2, meta: false, role: "ATK" },
+  { id: 3, name: "Twitch", armor: 1, speed: 3, meta: false, role: "ATK" },
+  { id: 4, name: "Montagne", armor: 3, speed: 1, meta: false, role: "ATK" },
+  { id: 5, name: "Ash", armor: 1, speed: 3, meta: true, role: "ATK" },
+  { id: 6, name: "Thermite", armor: 2, speed: 2, meta: false, role: "ATK" },
+  { id: 7, name: "Glaz", armor: 1, speed: 3, meta: false, role: "ATK" },
+  { id: 8, name: "Fuze", armor: 3, speed: 1, meta: false, role: "ATK" },
+  { id: 9, name: "IQ", armor: 1, speed: 3, meta: false, role: "ATK" },
+  { id: 10, name: "Blitz", armor: 3, speed: 1, meta: false, role: "ATK" },
+  { id: 11, name: "Buck", armor: 2, speed: 2, meta: false, role: "ATK" },
+  { id: 12, name: "Blackbeard", armor: 2, speed: 2, meta: true, role: "ATK" },
+  { id: 13, name: "Smoke", armor: 2, speed: 2, meta: false, role: "DEF" },
+  { id: 14, name: "Mute", armor: 2, speed: 2, meta: false, role: "DEF" },
+  { id: 15, name: "Rook", armor: 3, speed: 1, meta: false, role: "DEF" },
+  { id: 16, name: "Doc", armor: 3, speed: 1, meta: false, role: "DEF" },
+  { id: 17, name: "Castle", armor: 1, speed: 3, meta: false, role: "DEF" },
+  { id: 18, name: "Pulse", armor: 2, speed: 2, meta: false, role: "DEF" },
+  { id: 19, name: "Kapkan", armor: 1, speed: 3, meta: true, role: "DEF" },
+  { id: 20, name: "Tachanka", armor: 3, speed: 1, meta: false, role: "DEF" },
+  { id: 21, name: "Jager", armor: 1, speed: 3, meta: true, role: "DEF" },
+  { id: 22, name: "Bandit", armor: 1, speed: 3, meta: false, role: "DEF" },
+  { id: 23, name: "Frost", armor: 1, speed: 3, meta: false, role: "DEF" },
+  { id: 24, name: "Valkyrie", armor: 2, speed: 2, meta: true, role: "DEF" },
+];

@@ -1,0 +1,53 @@
+<div id="dashboard">
+    <div class="d-flex justify-content-center">
+        <h3 class="text-light">TOP OPERATORS</h3>
+    </div>
+    <br>
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3 text-center">
+                <h5 class="text-light bg-dark pt-2 pb-2">Top Attacker</h5>
+                <div class="row" *ngFor="let atk of operatorsAtk">
+                    <a style="display: contents;" routerLink="/detail/{{atk.id}}"><img class="col-md-7 d-flex justify-content-start"
+                            src="../../../assets/logo/{{atk.name | lowercase}}.png" alt="">
+                    </a>
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-0">
+                        <h6 class="text-light"><a routerLink="/detail/{{atk.id}}">{{atk.name}}</a><br>Armor : {{atk.armor}}<br>Speed : {{atk.speed}}</h6>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="text-light bg-dark pt-2 pb-2">Top Defender</h5>
+                <div class="row" *ngFor="let Def of operatorsDef">
+                    <a style="display: contents;" routerLink="/detail/{{Def.id}}"><img class="col-md-7 d-flex justify-content-start"
+                            src="../../../assets/logo/{{Def.name | lowercase}}.png" alt=""></a>
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-0">
+                        <h6 class="text-light"><a routerLink="/detail/{{Def.id}}">{{Def.name}}</a><br>Armor : {{Def.armor}}<br>Speed : {{Def.speed}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="text-light bg-dark pt-2 pb-2">Top Pick</h5>
+                <div class="row" *ngFor="let TopPick of operatorsTopPick">
+                    <a style="display: contents;" routerLink="/detail/{{TopPick.id}}"><img class="col-md-7 d-flex justify-content-start"
+                            src="../../../assets/logo/{{TopPick.name | lowercase}}.png" alt=""></a>
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-0">
+                        <h6 class="text-light"><a routerLink="/detail/{{TopPick.id}}">{{TopPick.name}}</a><br>Armor : {{TopPick.armor}}<br>Speed : {{TopPick.speed}}</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 text-center">
+                <h5 class="text-light bg-dark pt-2 pb-2">Top Ban</h5>
+                <div class="row" *ngFor="let TopBan of operatorsTopBan">
+                    <a style="display: contents;" routerLink="/detail/{{TopBan.id}}"><img class="col-md-7 d-flex justify-content-start"
+                            src="../../../assets/logo/{{TopBan.name | lowercase}}.png" alt=""></a>
+                    <div class="col-md-3 d-flex align-items-center justify-content-center p-0">
+                        <h6 class="text-light"><a routerLink="/detail/{{TopBan.id}}">{{TopBan.name}}</a><br>Armor : {{TopBan.armor}}<br>Speed : {{TopBan.speed}}</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>

@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: r6s;
+    src: url('./assets/font/Scout-Bold.otf');
+  }
+
+*{
+    font-family: 'r6s', r6s;
+    font-size: large
+}
+
+body{
+    background-image: url("src/assets/138652-amazing-rainbow-six-siege-background-1920x1080.jpg");
+    background-repeat: repeat-y;
+    overflow-x: hidden;
+}

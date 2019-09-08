@@ -1,0 +1,31 @@
+/* .img-thumbnail{
+    width: 10%;
+} */
+
+.col-cus-20{
+    flex: 0 0 20%;
+    max-width: 20%;
+}
+
+.img-thumbnail{
+    background-color: transparent;
+    border: 0;
+}
+
+.op-card{
+    transition: transform .3s;
+}
+
+.op-card:hover{
+    transform: scale(1.2);
+}
+
+.op-label{
+    margin-top: -15px;
+}
+
+.delete{
+    border-radius: 100%;
+    margin-top: 5%;
+    position: absolute;
+}
