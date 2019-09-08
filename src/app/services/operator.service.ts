@@ -13,7 +13,7 @@ export class OperatorService {
   httpOptions = {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   };
-  private opUrl = 'http://localhost:8081';
+  private opUrl = 'http://localhost:9999';
   // private opUrl = 'api/operators';
 
   getOperators(): Observable<Operator[]> {
